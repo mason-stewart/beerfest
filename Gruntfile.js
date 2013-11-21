@@ -123,7 +123,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    httpImagesPath: '../images',
+                    httpImagesPath: '/beerfest/images',
                     generatedImagesDir: '<%= yeoman.dist %>/images/generated'
                 }
             },
