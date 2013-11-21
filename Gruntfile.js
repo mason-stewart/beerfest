@@ -123,6 +123,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
+                    httpImagesPath: '../images',
                     generatedImagesDir: '<%= yeoman.dist %>/images/generated'
                 }
             },
@@ -288,7 +289,7 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'compass',
+                'compass:dist',
                 'copy:styles',
                 'imagemin',
                 'svgmin',
