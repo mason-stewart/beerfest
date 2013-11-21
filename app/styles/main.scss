@@ -17,11 +17,14 @@ html {
 body {
 }
 
+.no-touch .jumbotron {
+    background-attachment: fixed;
+}
+
 .jumbotron {
     position: relative;
     background: image_url('bg.jpg') no-repeat center center;
     background-size: cover; 
-    background-attachment: fixed;
     margin-bottom: 0;
 
     h2 {
@@ -167,6 +170,8 @@ a {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
+
     .container {
         max-width: 730px;
     }
