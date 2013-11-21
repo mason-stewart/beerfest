@@ -1,0 +1,183 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Space out content a bit */
+body {
+}
+
+.jumbotron {
+    position: relative;
+    background: image_url('bg.jpg') no-repeat center center;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-bottom: 0;
+
+    h2 {
+        color: #fff;
+        font-size: 44px;
+    }
+
+    &:before {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #FF4700;
+        @include opacity(0.8);
+        content: ' ';
+    }
+
+    &.red:before { background: #FF4700; }
+    &.green:before { background: #3EB307; }
+    &.blue:before { background: #1D73CF; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a {
+    color: #F6FF1F;
+
+    &:hover {
+        color: #F7E302;
+        text-decoration: none;
+    }
+
+}
+
+.logo {
+    text-align: center;
+
+    img {
+        max-width: 400px;
+    }
+}
+
+.ticket {
+    text-align: center;
+    
+    a {
+
+    }
+
+    .price {
+        display: block;
+        font-size: 90px;
+    }
+
+    .now {
+        font-size: 40px;
+    }
+
+    .vip {
+        font-family: 16px;
+    }
+
+}
+
+.draft {
+    text-align: center;
+
+    &.divider {
+        margin-top: 30px;
+        padding-top: 60px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    ul {
+        padding-left: 0;
+        margin-bottom: 36px;
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.marketing,
+.draft
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page footer */
+.footer {
+    text-align: center;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+/* Supporting marketing content */
+.marketing {
+    text-align: center;
+    margin: 10px 0 40px 0;
+
+    .number {
+        color: #FF634D;
+    }
+
+    .date {
+        font-size: 36px;
+        margin-top: 38px;
+        margin-bottom: 45px;
+    }
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+
+    /* Remove the padding we set earlier */
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
