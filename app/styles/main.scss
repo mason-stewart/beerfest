@@ -48,6 +48,7 @@ body {
     &.red:before { background: #FF4700; }
     &.green:before { background: #3EB307; }
     &.blue:before { background: #1D73CF; }
+    &.yellow:before { background: #E9CB2E; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +126,19 @@ a {
         li {
             list-style-type: none;
         }
+    }
+}
+
+.casks {
+    border-top: 1px solid #E5E5E5;
+    text-align: center;
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        margin-bottom: 26px;
     }
 }
 
